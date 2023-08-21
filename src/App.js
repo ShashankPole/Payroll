@@ -8,7 +8,7 @@ function App() {
       <Home {...config1} /> 
       <Home {...config2} /> 
       <Home {...config3} />
-      <FooterComponent />
+      
      
     </>
   );
