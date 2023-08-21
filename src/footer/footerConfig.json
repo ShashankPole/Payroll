@@ -1,0 +1,19 @@
+
+{
+
+    "companyName": "Infokalsh",
+    "companyLinks": [
+      { "label": "About", "url": "/about-company" },
+      { "label": "Products", "url": "/products" },
+      { "label": "Privacy", "url": "/privacy" },
+      { "label": "Terms", "url": "/terms" }
+    ],
+
+    "socialMedia": [
+      { "icon": "facebook", "url": "https://facebook.com/appsheet" },
+      { "icon": "twitter", "url": "https://twitter.com/appsheet" },
+      { "icon": "linkedin", "url": "https://linkedin.com/company/appsheet" }
+    ]
+   
+  }
+  
