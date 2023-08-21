@@ -10,9 +10,9 @@
     ],
 
     "socialMedia": [
-      { "icon": "facebook", "url": "https://facebook.com/appsheet" },
-      { "icon": "twitter", "url": "https://twitter.com/appsheet" },
-      { "icon": "linkedin", "url": "https://linkedin.com/company/appsheet" }
+      { "icon": "facebook", "url": "https://facebook.com" },
+      { "icon": "twitter", "url": "https://twitter.com" },
+      { "icon": "linkedin", "url": "https://linkedin.com" }
     ]
    
   }

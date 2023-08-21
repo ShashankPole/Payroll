@@ -1,5 +1,5 @@
 import React from 'react';
-import FooterComponent from "../../footer/FooterComponent"
+
 import { Container, CardContent, Typography, CardMedia } from '@material-ui/core';
 
 function MyComponent(props) {
@@ -27,7 +27,7 @@ function MyComponent(props) {
           {description && <Typography variant="body2" style={descriptionStyle}>{description}</Typography>}
         </CardContent>
       </div>
-      <FooterComponent />
+      
     </Container>
   );
 }
