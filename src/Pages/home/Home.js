@@ -1,4 +1,5 @@
 import React from 'react';
+
 import { Container, CardContent, Typography, CardMedia } from '@material-ui/core';
 
 function MyComponent(props) {
@@ -26,6 +27,7 @@ function MyComponent(props) {
           {description && <Typography variant="body2" style={descriptionStyle}>{description}</Typography>}
         </CardContent>
       </div>
+      
     </Container>
   );
 }
