@@ -2,12 +2,15 @@ import Home from "./Pages/home/Home"
 import FooterComponent from "./footer/FooterComponent"
 import {config1, config2, config3 } from "./configurations/componentConfig"
 
+
+const homeConfig = [config1, config2, config3]
 function App() {
+
   return (
     <>
-      <Home {...config1} /> 
-      <Home {...config2} /> 
-      <Home {...config3} />
+     { homeConfig.map((config, index) => (
+      <Home key={index} {...config} />
+     ))}
       <FooterComponent />
      
     </>
