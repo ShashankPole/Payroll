@@ -8,7 +8,7 @@ function App() {
   return (
     <>
     {homeConfig.map((config, index) => (
-      <Home key={index} {...configconfig}/>
+      <Home key={index} {...config}/>
     ))}
       <FooterComponent />
      
