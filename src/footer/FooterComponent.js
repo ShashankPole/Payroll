@@ -1,9 +1,10 @@
 // FooterComponent.js
 import React from 'react';
 import footerConfig from "./footerConfig.json"
+import "../scss/style.scss";
 import { Container, Grid, Typography, Link, IconButton } from '@mui/material';
 import { FaFacebook, FaTwitter, FaLinkedin } from 'react-icons/fa'; // Import the icons
-import "./Footer.css"
+
 
 const FooterComponent = (  ) => {
   return (
