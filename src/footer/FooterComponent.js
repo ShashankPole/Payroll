@@ -6,7 +6,7 @@ import { Container, Grid, Typography, Link, IconButton } from '@mui/material';
 import { FaFacebook, FaTwitter, FaLinkedin } from 'react-icons/fa'; // Import the icons
 
 
-const FooterComponent = (  ) => {
+const FooterComponent = () => {
   return (
     <div className="footer-container">
       <Container component="footer" maxWidth="md">
