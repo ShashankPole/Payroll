@@ -11,12 +11,13 @@ function App() {
     <>
     
       <Home />
-  
-      
+
       <Header data={Data} />
      
     </>
   );
 }
 
+
 export default App;
+
