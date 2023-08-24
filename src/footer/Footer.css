@@ -1,9 +1,13 @@
-
+/* 
 .footer-container {
+<<<<<<< HEAD
+    
+=======
 
+>>>>>>> 0468557f80a0290cf0c87173b765f001730098b6
     bottom: 0;
     width: 100%;
-    background-color: #f8f8f8;
+    background-color: #e1dcdc;
     padding-top: 20px;
     padding-bottom: 20px;
   }
@@ -16,12 +20,11 @@
     padding: 0;
     color: #5f6368;
     font-size: 18px;
-    /* font-weight:600; */
-  }
+  } */
   
-  .company-links li {
+  /* .company-links li {
     display: inline-block;
-    margin-right: 20px; /* Add spacing between company links */
+    margin-right: 20px; 
   }
   
   .company-name {
@@ -36,5 +39,5 @@
     align-items: center;
     gap: 16px;
     margin-top: 20px;
-  }
+  } */
   

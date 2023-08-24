@@ -4,12 +4,14 @@ import {config1, config2, config3 } from "./configurations/componentConfig"
 import Header from "./Header/Header";
 import Data from "./Header/Data.json"
 
+const homeConfig = [config1, config2, config3];
+
 function App() {
   return (
     <>
-      <Home {...config1} /> 
-      <Home {...config2} /> 
-      <Home {...config3} />
+    {homeConfig.map((config, index) => (
+      <Home key={index} {...config}/>
+    ))}
       <FooterComponent />
       <Header data={Data} />
      
