@@ -3,7 +3,7 @@ import React from 'react';
 import footerConfig from "./footerConfig.json"
 import { Container, Grid, Typography, Link, IconButton } from '@mui/material';
 import { FaFacebook, FaTwitter, FaLinkedin } from 'react-icons/fa'; // Import the icons
-import "./Footer.css"
+import "../scss/style.scss";
 
 const FooterComponent = (  ) => {
   return (
