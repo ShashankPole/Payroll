@@ -83,3 +83,4 @@ export const config3 = {
     },
     imageDirection: "right", // Default image direction
   };
+
