@@ -1,16 +1,19 @@
 import React from 'react';
 
 import { Container, CardContent, Typography, CardMedia } from '@material-ui/core';
+import {config1, config2, config3 } from "../../configurations/componentConfig"
+import FooterComponent from '../../footer/FooterComponent';
 
-function MyComponent(props) {
-  const { title, description, showImage, imageUrl, layout, titleStyle, descriptionStyle, imageStyle, imageDirection } = props;
+const homeConfig = [config1, config2, config3];
+function Home(props) {
+  const { description,   layout,  imageStyle, imageDirection } = props;
 
   const containerStyle = {
-    margin: "40px",
-    display: 'flex',
-    flexDirection: layout.flexDirection || 'row',
-    justifyContent: layout.justifyContent || 'space-between',
-    alignItems: layout.alignItems || 'center',
+    margin: "1px",
+    // display 'flex',
+    // flexDirection: layout.flexDirection || 'row',
+    // justifyContent: layout.justifyContent || 'space-between',
+    // alignItems: layout.alignItems || 'center',
   };
 
   const reversedImageStyle = {
@@ -19,17 +22,21 @@ function MyComponent(props) {
   };
 
   return (
-    <Container style={containerStyle}>
-      {showImage && <CardMedia component="img" src={imageUrl} alt="Component Image" style={reversedImageStyle} />}
-      <div>
-        <CardContent>
-          <Typography variant="h6" style={titleStyle}>{title}</Typography>
-          {description && <Typography variant="body2" style={descriptionStyle}>{description}</Typography>}
-        </CardContent>
-      </div>
-      
+    <>
+    <Container >
+      {homeConfig.map((config, index) => (
+       <>
+       <CardMedia key={index} component="img" src={config.imageUrl} alt="Component Image" style={config.imageStyle} /><div>
+          <CardContent>
+            <Typography variant="h6" style={config.titleStyle}>{config.title}</Typography>
+            {config.description && <Typography variant="body2" style={config.descriptionStyle}>{config.description}</Typography>}
+          </CardContent>
+        </div></>
+       ))}
+      <FooterComponent />
     </Container>
+    </>
   );
 }
 
-export default MyComponent;
+export default Home;
