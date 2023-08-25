@@ -1,9 +1,13 @@
 /* 
 .footer-container {
+<<<<<<< HEAD
+    
+=======
 
+>>>>>>> 0468557f80a0290cf0c87173b765f001730098b6
     bottom: 0;
     width: 100%;
-    background-color: #f8f8f8;
+    background-color: #e1dcdc;
     padding-top: 20px;
     padding-bottom: 20px;
   }
