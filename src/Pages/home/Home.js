@@ -25,7 +25,10 @@ function Home(props) {
     <>
     <Container >
       {homeConfig.map((config, index) => (
-       <><CardMedia key={index} component="img" src={config.imageUrl} alt="Component Image" style={config.imageStyle} /><div>
+
+       <>
+       <CardMedia key={index} component="img" src={config.imageUrl} alt="Component Image" style={config.imageStyle} /><div>
+ 
           <CardContent>
             <Typography variant="h6" style={config.titleStyle}>{config.title}</Typography>
             {config.description && <Typography variant="body2" style={config.descriptionStyle}>{config.description}</Typography>}
@@ -38,4 +41,7 @@ function Home(props) {
   );
 }
 
+
 export default Home;
+
+

@@ -35,7 +35,7 @@ export const config2 = {
   imageUrl: require("../assets/images/img2.jpg"),
   layout: {
     flexDirection: "row", // Default layout direction
-    justifyContent: "space-between",
+    justifyContent: "",
     alignItems: "center",
   },
   titleStyle: {
@@ -47,13 +47,13 @@ export const config2 = {
     marginLeft: "20px",
   },
   imageStyle: {
-    margin: "40px",
+    
     width: "300px",
     height: "auto",
-    justifyContent: "right",
+
     boxShadow: "1px 2px 35px rgba(0, 0, 0, 0.3)",
   },
-  imageDirection: "left", // Default image direction
+  imageDirection: "right", // Default image direction
 };
 
 
