@@ -1,6 +1,7 @@
 import React from 'react';
+import "../../scss/style.scss"
 
-import { Container, CardContent, Typography, CardMedia } from '@material-ui/core';
+import { Container, CardContent, Typography, CardMedia,} from '@material-ui/core';
 
 function MyComponent(props) {
   const { title, description, showImage, imageUrl, layout, titleStyle, descriptionStyle, imageStyle, imageDirection } = props;
@@ -18,6 +19,8 @@ function MyComponent(props) {
     float: imageDirection === 'left' ? 'right' : 'left',
   };
 
+  
+
   return (
     <Container style={containerStyle}>
       {showImage && <CardMedia component="img" src={imageUrl} alt="Component Image" style={reversedImageStyle} />}
@@ -27,7 +30,6 @@ function MyComponent(props) {
           {description && <Typography variant="body2" style={descriptionStyle}>{description}</Typography>}
         </CardContent>
       </div>
-      
     </Container>
   );
 }
