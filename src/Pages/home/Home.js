@@ -9,7 +9,7 @@ function Home(props) {
   const { description,   layout,  imageStyle, imageDirection } = props;
 
   const containerStyle = {
-    margin: "1px",
+    margin: "50px",
     // display 'flex',
     // flexDirection: layout.flexDirection || 'row',
     // justifyContent: layout.justifyContent || 'space-between',
@@ -23,7 +23,7 @@ function Home(props) {
 
   return (
     <>
-    <Container >
+    <Container maxWidth="lg" style={containerStyle}>
       {homeConfig.map((config, index) => (
 
        <>
@@ -35,8 +35,9 @@ function Home(props) {
           </CardContent>
         </div></>
        ))}
-      <FooterComponent />
+      
     </Container>
+    <FooterComponent />
     </>
   );
 }
