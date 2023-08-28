@@ -10,7 +10,7 @@ import Data from "./Header/Data.json"
 function App() {
   return (
   
-    
+    <>
       <Home />
 
       <Header data={Data} />
