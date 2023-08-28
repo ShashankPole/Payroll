@@ -6,19 +6,20 @@
   padding: 30px 0;
   font-family: 'open sans';
   
+
   .company-links {
     display: flex;
     align-items: center;
-    // list-style: none;
+    
     
     color: $grey500; // Use your color variable
-    font-size: 15px;
-    font-weight: 500;
+    font-size: 16px;
+    font-weight: 550;
     
     li {
       display: inline-block;
       margin-right: 20px; /* Add spacing between company links */
-      
+
     :hover {
       color: $grey900; // Change link color on hover to a lighter shade
     }
@@ -29,14 +30,15 @@
     font-size: 20px;
     font-family: 'open sans';
     color: $grey500; // Use your color variable
+    margin-left: 20px;
+
+ 
   }
   
   .social-media {
     display: flex;
     justify-content: flex-end;
-    align-items: center;
-    gap: 16px;
-    margin-top: 20px;
+    align-items: center; 
   }
 }
 
