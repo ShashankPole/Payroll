@@ -1,8 +1,11 @@
 import React from 'react';
+import "../../scss/style.scss"
+
 
 import { Container, CardContent, Typography, CardMedia } from '@material-ui/core';
 import {config1, config2, config3 } from "../../configurations/componentConfig"
 import FooterComponent from '../../footer/FooterComponent';
+
 
 const homeConfig = [config1, config2, config3];
 function Home(props) {
@@ -21,6 +24,8 @@ function Home(props) {
     float: imageDirection === 'left' ? 'right' : 'left',
   };
 
+  
+
   return (
     <>
     <Container >
@@ -36,6 +41,7 @@ function Home(props) {
         </div></>
        ))}
       <FooterComponent />
+
     </Container>
     </>
   );
